@@ -1,0 +1,30 @@
+* {
+    background-color: aqua;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  #target {
+    position: relative;
+    overflow: hidden; /* Ensure tomatoes stay within the target image */
+  }
+  .tomato {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.5s ease-in-out;
+  }
